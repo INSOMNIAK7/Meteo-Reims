@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Reims | Prévisions en temps réel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Météo Reims</h1>
+            <p class="subtitle">Prévisions météorologiques pour Reims et la région</p>
+        </header>
+        <div class="main-weather">
+            <div class="weather-icon">☀️</div>
+            <div class="current-temp">22°</div>
+            <div class="weather-desc">Ensoleillé</div>
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Ressenti</div>
+                    <div class="detail-value">24°</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humidité</div>
+                    <div class="detail-value">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Vent</div>
+                    <div class="detail-value">12 km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pression</div>
+                    <div class="detail-value">1013 hPa</div>
+                </div>
+            </div>
+        </div>
+        <div class="forecast-section">
+            <h2 class="section-title">Prévisions sur 5 jours</h2>
+            <div class="forecast-container">
+                <!-- Exemple de carte météo -->
+                <div class="forecast-card">
+                    <div class="forecast-header">
+                        <div class="forecast-day">Aujourd'hui</div>
+                        <div class="forecast-icon">☀️</div>
+                    </div>
+                    <div class="forecast-temps">
+                        <div class="temp-high">25°</div>
+                        <div class="temp-low">15°</div>
+                    </div>
+                    <div class="forecast-desc">Ensoleillé toute la journée</div>
+                </div>
+                <!-- Autres jours à compléter -->
+            </div>
+        </div>
+        <div class="forecast-section">
+            <h2 class="section-title">Villes alentours</h2>
+            <div class="cities-grid">
+                <div class="city-card">
+                    <div class="city-name">Épernay</div>
+                    <div class="city-temp">21°</div>
+                    <div class="city-desc">Nuageux</div>
+                </div>
+                <!-- Autres villes à compléter -->
+            </div>
+        </div>
+    </div>
+    <button class="refresh-btn" onclick="refreshWeather()">↻</button>
+    <script src="script.js"></script>
+</body>
+</html>
